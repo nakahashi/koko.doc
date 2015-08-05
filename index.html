@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Web開発スタディプロダクト koko 企画書</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <!-- <link rel="stylesheet" href="css/theme/league.css" id="theme"> -->
+    <link rel="stylesheet" href="css/theme/Sky.css" id="theme">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+  <style type="text/css">
+    .cap { text-transform: capitalize; }
+    .lower { text-transform: lowercase; }
+  </style>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <section>
+            <h2>Web開発スタディプロダクト</h2>
+            <h2><a class="lower">koko</a> 企画書</h2>
+          </section>
+          <section id="themes">
+            <h2>Themes</h2>
+            <p>
+              reveal.js comes with a few themes built in: <br>
+              <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+              <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+            </p>
+          </section>
+          <section id="transitions">
+            <h2>Transition Styles</h2>
+            <p>
+              You can select from different transitions, like: <br>
+              <a href="?transition=none#/transitions">None</a> -
+              <a href="?transition=fade#/transitions">Fade</a> -
+              <a href="?transition=slide#/transitions">Slide</a> -
+              <a href="?transition=convex#/transitions">Convex</a> -
+              <a href="?transition=concave#/transitions">Concave</a> -
+              <a href="?transition=zoom#/transitions">Zoom</a>
+            </p>
+          </section>
+        </section>
+
+        <section data-markdown
+            data-separator="\n---\n$"
+            data-vertical="\n--\n">
+            <script type="text/template">
+
+## プロダクト (1)
+
+### <span class="cap">Twitter</span>上で動作するボット：<a class="lower">koko</a>
+ * 話しかけると雑談してくれる
+ * トレンドトピックにコメント
+ * 機能をプラグインでに追加可能
+ * Node.jsで実装
+
+---
+
+## プロダクト (2)
+
+### <a class="lower">koko</a>とのWebインターフェイス
+ * kokoとのTwitterを介さないやりとり
+ * kokoのメンテナンス
+
+---
+
+## 目的 (1)
+
+### <a>サプライズ</a>なプロダクトを！
+
+* SNS/ビッグデータの最前線に投下！
+* 動作をプレゼンしやすい
+* モチベーション ≒ 継続性
+
+---
+
+## 目的 (2)
+
+### Web業界の<a>モダンなFW/開発手法</a>にキャッチアップ！
+ * MEANスタック/ES6/...
+ * Github/gulp/...
+ * 仮想マシン/コンテナ/...
+ * BDD/自動テスト/継続的デプロイ/...
+
+---
+
+<section data-background="#e5f70b">
+  <h2>ものづくりという意味では普段の業務と同じだが、Web業界はOSSの使いこなしが別次元。</h2>
+  <h2><a class="fragment">それが当たり前の世界にすべき！</a></h2>
+</section>
+
+---
+
+### 期間
+
+ 2015年8月から1年～
+
+***
+
+### 当初のメンバ
+ * 中橋 : PM
+ * 稲富 : MB
+            </script>
+        </sectin>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
