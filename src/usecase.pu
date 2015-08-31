@@ -1,0 +1,27 @@
+@startuml
+
+skinparam usecase {
+  FontName Ricty Diminished
+}
+
+title kokoユースケース
+left to right direction
+
+note bottom of (ユーザ) : Twitterアプリ\nからアクセス
+actor :ユーザ:
+note top of (管理者) : Webインターフェイス\nからアクセス
+actor :管理者:
+usecase Twitter
+
+rectangle "koko" {
+  :ユーザ: -- (フォローする)
+  :ユーザ: -- (会話する)
+  (フォローする) ..> (コア)
+  (会話する) ..> (コア)
+  (コア) ..> (機能設定)
+  (コア) ..> Twitter
+
+  (機能設定) -- :管理者:
+}
+
+@enduml
