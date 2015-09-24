@@ -1,0 +1,29 @@
+cloud Heroku（等） {
+  package koko {
+    package Express
+
+    package MongoDB
+    note top : 設定、会話データ格納
+
+    package React
+    note top : Viewレイヤライブラリ
+
+    package app
+    note left : 開発対象
+
+    app -u- Express
+    app -u- MongoDB
+    app -u- React
+  }
+}
+
+cloud docomo {
+  package 雑談対話API
+}
+
+cloud twitter {
+  package API
+}
+
+app -d- 雑談対話API : REST
+app -d- API : REST
