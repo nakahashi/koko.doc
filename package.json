@@ -8,6 +8,11 @@
   },
   "author": "nakahashi",
   "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "spawn-cmd": "0.0.2",
+    "through2": "^0.6.3"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-coffee": "^2.3.1",
