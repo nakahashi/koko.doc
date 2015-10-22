@@ -1,0 +1,29 @@
+cloud AWS {
+  node EC2 {
+    package kokoボット
+  }
+  note top : Node.jsで動作
+
+  node S3 {
+    package kokoコンソール
+  }
+  note top : 静的ページとして開発。\n表示データはAJAXでDB・Twitter\nから取ってくる
+
+  node DynamoDB
+  note top : 設定値・会話情報を保存
+
+  kokoボット -u- DynamoDB
+  kokoコンソール -u- DynamoDB
+}
+
+cloud docomo {
+  package 雑談対話API
+}
+
+cloud twitter {
+  package API
+}
+
+kokoボット -d- 雑談対話API : REST
+kokoボット -d- API : REST
+kokoコンソール -d- API : REST
